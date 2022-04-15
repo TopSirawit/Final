@@ -1,0 +1,272 @@
+print("  -------------------------------------------------------")
+print("             ยินดีต้อนรับเข้าสู่ The Cloud Fruit Shop")
+print("  -------------------------------------------------------")
+print("            ท่านสามารถเลือกหมวดหมู่ประเภทสินค้าของทางร้านได้ดังนี้")
+print("  -------------------------------------------------------")
+fresh_fruit = ["อะโวคาโด","มังคุด","แก้วมังกร","สับปะรด","มะพร้าว","กล้วย","เสาวรส","กระท้อน","แอปเปิ้ล","ส้ม","ฝรั่ง","แตงโม","ทุเรียน","มะม่วง"]
+price_fresh_fruit = [85, 60, 35, 35, 30, 30, 30, 40, 40, 30, 35, 40, 200, 25]
+peeled_fruit = ["แตงโม","ฝรั่ง","เมล่อน","แอปเปิ่ล","สตอเบอร์รี่","แก้วมังกร","มะม่วง","มะละกอ","สาลี่","กี่วี่","ชมพู่","กระท้อน"]
+price_peeled_fruit = [20, 20, 20, 25, 30, 20, 20, 20, 20, 30, 20, 25]
+processed_fruit = ["แยมสับปะรด","แยมสตอเบอร์รี่","เงาะลอยแก้ว","มะม่วงกวน","ทุเรียนกวน","ทุเรียนทอด","ทุเรียนเชื่อม","วุ้นมะพร้าว","กล้วยเชื่อม","ลำไยอบแห้ง","กี่วี่อบแห้ง"]
+price_processed_fruit = [85, 85, 40, 50, 65, 70, 60, 40, 35, 50, 70]
+fruit_basket = ["S","M","L","XL"]
+price_fruit_basket = [400, 750, 900, 1250]
+bath = ('บาท')
+price_fresh_fruit_all = 0
+price_peeled_fruit_all = 0
+price_processed_fruit_all = 0
+price_fruit_basket_all = 0
+y1 = 0
+y2 = 0
+y3 = 0
+y4 = 0
+def fresh_fruit_funtion():
+  print("\nผลไม้สดมีทั้งหมด 14 รายการ")
+  print("\n  รายการ","\t\t\t\t\t","ราคา / กิโลกรัม")
+  for i in range(0,14):
+      print("{:2}.{}{}{}".format(i+1,fresh_fruit[i],"            \t\t\t ",price_fresh_fruit[i])+" \t"+bath)
+
+  fresh_fruit_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
+  if fresh_fruit_1 == '1' :
+          fruit1 = "อะโวคาโด"
+          price1 = 85
+  elif fresh_fruit_1 == '2' :
+          fruit1 = "มังคุด"
+          price1 = 60
+  elif fresh_fruit_1 == '3' :
+          fruit1 = "แก้วมังกร"
+          price1 = 35
+  elif fresh_fruit_1 == '4' :
+          fruit1 = "สัปปะรด"
+          price1 = 35
+  elif fresh_fruit_1 == '5' :
+          fruit1 = "มะพร้าว"
+          price1 = 30
+  elif fresh_fruit_1 == '6' :
+          fruit1 = "กล้วย"
+          price1 = 30
+  elif fresh_fruit_1 == '7' :
+          fruit1 = "เสาวรส"
+          price1 = 30
+  elif fresh_fruit_1 == '8' :
+          fruit1 = "กระท้อน"
+          price1 = 40
+  elif fresh_fruit_1 == '9' :
+          fruit1 = "แอปเปิ้ล"
+          price1 = 40
+  elif fresh_fruit_1 == '10' :
+          fruit1 = "ส้ม"
+          price1 = 30
+  elif fresh_fruit_1 == '11' :
+          fruit1 = "ฝรั่ง"
+          price1 = 35
+  elif fresh_fruit_1 == '12' :
+          fruit1 = "แตงโม"
+          price1 = 40
+  elif fresh_fruit_1 == '13' :
+          fruit1 = "ทุเรียน"
+          price1 = 200
+  elif fresh_fruit_1 == '14' :
+          fruit1 = "มะม่วง"
+          price1 = 25
+  else:
+      print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
+      fresh_fruit_funtion()
+  global y1
+  kilogram = float(input("กรุณากรอกน้ำหนักผลไม้(หน่วยเป็นกิโลกรัม)  :   "))
+  price_fresh_fruit_all = kilogram * price1
+  x1 = price_fresh_fruit_all
+  y1 += x1
+  return y1 
+def peeled_fruit_funtion():
+  print("\nผลไม้ปอกพร้อมทานมีทั้งหมด 12 รายการ")
+  print("\n  รายการ","\t\t\t\t\t","ราคา /  ชิ้น")
+  for i in range(0,12):
+      print("{:2}.{}{}{}".format(i+1,peeled_fruit[i],"            \t\t\t ",price_peeled_fruit[i])+" \t"+bath)
+  peeled_fruit_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
+  if peeled_fruit_1 == '1' :
+        fruit2 = "แตงโม"
+        price2 = 20
+  elif peeled_fruit_1 == '2' :
+        fruit2 = "ฝรั่ง"
+        price2 = 20
+  elif peeled_fruit_1 == '3' :
+        fruit2 = "เมล่อน"
+        price2 = 20
+  elif peeled_fruit_1 == '4' :
+        fruit2 = "แอปเปิ้ล"
+        price2 = 25
+  elif peeled_fruit_1 == '5' :
+        fruit2 = "สตอเบอร์รี่"
+        price2 = 30
+  elif peeled_fruit_1 == '6' :
+        fruit2 = "แก้วมังกร"
+        price2 = 20
+  elif peeled_fruit_1 == '7' :
+        fruit2 = "มะม่วง"
+        price2 = 20
+  elif peeled_fruit_1 == '8' :
+        fruit2 = "มะละกอ"
+        price2 = 20
+  elif peeled_fruit_1 == '9' :
+        fruit2 = "สาลี่"
+        price2 = 20
+  elif peeled_fruit_1 == '10' :
+        fruit2 = "กี่วี่"
+        price2 = 30
+  elif peeled_fruit_1 == '11' :
+        fruit2 = "ชมพู่"
+        price2 = 20
+  elif peeled_fruit_1 == '12' :
+        fruit2 = "กระท้อน"
+        price2 = 25
+  else:
+      print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
+      peeled_fruit_funtion()
+  global y2
+  Quantity = float(input("กรุณากรอกจำนวนสินค้าที่ต้องการ  :   "))
+  price_peeled_fruit_all = Quantity * price2
+  x2 = price_peeled_fruit_all
+  y2 += x2
+  return y2
+def processed_fruit_funtion():
+  print("\nผลไม้สดมีทั้งหมด 11 รายการ")
+  print("\n  รายการ","\t\t\t\t\t","ราคา /  ชิ้น")
+  for i in range(0,11):
+      print("{:2}.{}{}{}".format(i+1,processed_fruit[i],"            \t\t\t ",price_processed_fruit[i])+" \t"+bath)
+  processed_fruit_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
+  if processed_fruit_1 == '1' :
+          fruit3 = "แยมสับปะรด"
+          price3 = 85
+  elif processed_fruit_1 == '2' :
+          fruit3 = "แยมสตอเบอร์รี่"
+          price3 = 85
+  elif processed_fruit_1 == '3' :
+          fruit3 = "เงาะลอยแก้ว"
+          price3 = 40
+  elif processed_fruit_1 == '4' :
+          fruit3 = "มะม่วงกวน"
+          price3 = 50
+  elif processed_fruit_1 == '5' :
+          fruit3 = "ทุเรียนกวน"
+          price3 = 65
+  elif processed_fruit_1 == '6' :
+          fruit3 = "ทุเรียนทอด"
+          price3 = 70
+  elif processed_fruit_1 == '7' :
+          fruit3 = "ทุเรียนเชื่อม"
+          price3 = 60
+  elif processed_fruit_1 == '8' :
+          fruit3 = "วุ้นมะพร้าว"
+          price3 = 40
+  elif processed_fruit_1 == '9' :
+          fruit3 = "กล้วยเชื่อม"
+          price3 = 35
+  elif processed_fruit_1 == '10' :
+          fruit1 = "ลำไยอบแห้ง"
+          price3 = 50
+  elif processed_fruit_1 == '11' :
+          fruit1 = "กี่วี่อบแห้ง"
+          price3 = 70
+  else:
+      print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
+      processed_fruit_funtion()
+  global y3
+  Quantity3 = float(input("กรุณากรอกจำนวนสินค้าที่ต้องการ  :   "))
+  price_processed_fruit_all = Quantity3 * price3
+  x3 = price_processed_fruit_all
+  y3 += x3
+  return y3
+def fruit_basket_funtion():
+  print("\nผลไม้สดมีทั้งหมด 4 รายการ")
+  print("\n  รายการ","\t\t\t\t\t","ราคา /  ชิ้น")
+  for i in range(0,4):
+      print("{:2}.{}{}{}".format(i+1,fruit_basket[i],"            \t\t\t ",price_fruit_basket[i])+" \t"+bath)
+  fruit_basket_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
+  if fruit_basket_1 == '1' :
+          fruit4 = "S"
+          price4 = 400
+  elif fruit_basket_1 == '2' :
+          fruit4 = "M"
+          price4 = 750
+  elif fruit_basket_1 == '3' :
+          fruit4 = "L"
+          price4 = 900
+  elif fruit_basket_1 == '4' :
+          fruit4 = "XL"
+          price4 = 1250
+  else:
+      print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
+      fruit_basket_funtion()
+  global y4
+  Quantity4 = float(input("กรุณากรอกจำนวนสินค้าที่ต้องการ  :   "))
+  price_fruit_basket_all = Quantity4 * price4
+  x4 = price_fruit_basket_all
+  y4 += x4
+  return y4
+def nextbuy():
+    while True:
+      buy_next = input('''\nคุณต้องการซื้อสินค้าต่อหรือไม่
+    1 . ดำเนินการต่อ
+    2 . ชำระเงิน
+    
+    กรอกหมายเลขคำสั้งที่ต้องการ  :  ''')
+      if buy_next == "1":
+          print("ท่านสามารถเลือกหมวดหมู่ประเภทสินค้าของทางร้านได้ดังนี้")
+          break
+      elif buy_next == "2":
+          all_price()
+          break
+      else:
+          print("\nไม่มีคำสั่งนี้ กรุณากรอกใหม่")
+def all_price():
+    all_money = y1 + y2 + y3 + y4
+    print("---------------------------------------------------")
+    print('''    จำนวนเงินที่ต้องจ่ายคือ   : ''',all_money,bath)
+    print("---------------------------------------------------")
+    
+def money_rish():
+    all_money = y1 + y2 + y3 + y4
+    money = int(input('''    กรอกจำนวนเงินที่ผู้ใช้บริการจ่าย  :  ''',))
+    print("---------------------------------------------------")
+    if money > all_money :
+        sumall = (money - all_money)
+        print("    จำนวนเงินทอน  :  ",sumall,bath)
+        #superrish()
+    else:
+        print('''------------------- จำนวนเงินไม่เพียงพอ ------------------''')
+
+#def superrish():
+    
+
+
+
+
+
+while True:
+  Product_type = input(''' 
+  1 . ผลไม้สด
+  2 . ผลไม้ปอกพร้อมทาน
+  3 . ผลไม้แปรรูป
+  4 . กระเช้าผลไม้
+  5 . ออกจากโปรแกรม
+
+  กรอกหมายเลขหมวดหมู่ที่ต้องการ  :  ''')
+  if Product_type == "1":
+      fresh_fruit_funtion()
+      nextbuy()
+      money_rish()
+  elif Product_type == "2":
+      peeled_fruit_funtion()
+      nextbuy()
+  elif Product_type == "3":
+      processed_fruit_funtion()
+      nextbuy()
+  elif Product_type == "4":
+      fruit_basket_funtion()
+      nextbuy()
+  elif Product_type == "5":
+      print("\n----------------ยินดีให้บริการครับ----------------")
+      break
+  else:
+      print("\nไม่มีคำสั่งนี้ กรุณากรอกใหม่")
