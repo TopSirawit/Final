@@ -28,46 +28,32 @@ def fresh_fruit_funtion():
 
   fresh_fruit_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
   if fresh_fruit_1 == '1' :
-          fruit1 = "อะโวคาโด"
           price1 = 85
   elif fresh_fruit_1 == '2' :
-          fruit1 = "มังคุด"
           price1 = 60
   elif fresh_fruit_1 == '3' :
-          fruit1 = "แก้วมังกร"
           price1 = 35
   elif fresh_fruit_1 == '4' :
-          fruit1 = "สัปปะรด"
           price1 = 35
   elif fresh_fruit_1 == '5' :
-          fruit1 = "มะพร้าว"
           price1 = 30
   elif fresh_fruit_1 == '6' :
-          fruit1 = "กล้วย"
           price1 = 30
   elif fresh_fruit_1 == '7' :
-          fruit1 = "เสาวรส"
           price1 = 30
   elif fresh_fruit_1 == '8' :
-          fruit1 = "กระท้อน"
           price1 = 40
   elif fresh_fruit_1 == '9' :
-          fruit1 = "แอปเปิ้ล"
           price1 = 40
   elif fresh_fruit_1 == '10' :
-          fruit1 = "ส้ม"
           price1 = 30
   elif fresh_fruit_1 == '11' :
-          fruit1 = "ฝรั่ง"
           price1 = 35
   elif fresh_fruit_1 == '12' :
-          fruit1 = "แตงโม"
           price1 = 40
   elif fresh_fruit_1 == '13' :
-          fruit1 = "ทุเรียน"
           price1 = 200
   elif fresh_fruit_1 == '14' :
-          fruit1 = "มะม่วง"
           price1 = 25
   else:
       print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
@@ -85,40 +71,28 @@ def peeled_fruit_funtion():
       print("{:2}.{}{}{}".format(i+1,peeled_fruit[i],"            \t\t\t ",price_peeled_fruit[i])+" \t"+bath)
   peeled_fruit_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
   if peeled_fruit_1 == '1' :
-        fruit2 = "แตงโม"
         price2 = 20
   elif peeled_fruit_1 == '2' :
-        fruit2 = "ฝรั่ง"
         price2 = 20
   elif peeled_fruit_1 == '3' :
-        fruit2 = "เมล่อน"
         price2 = 20
   elif peeled_fruit_1 == '4' :
-        fruit2 = "แอปเปิ้ล"
         price2 = 25
   elif peeled_fruit_1 == '5' :
-        fruit2 = "สตอเบอร์รี่"
         price2 = 30
   elif peeled_fruit_1 == '6' :
-        fruit2 = "แก้วมังกร"
         price2 = 20
   elif peeled_fruit_1 == '7' :
-        fruit2 = "มะม่วง"
         price2 = 20
   elif peeled_fruit_1 == '8' :
-        fruit2 = "มะละกอ"
         price2 = 20
   elif peeled_fruit_1 == '9' :
-        fruit2 = "สาลี่"
         price2 = 20
   elif peeled_fruit_1 == '10' :
-        fruit2 = "กี่วี่"
         price2 = 30
   elif peeled_fruit_1 == '11' :
-        fruit2 = "ชมพู่"
         price2 = 20
   elif peeled_fruit_1 == '12' :
-        fruit2 = "กระท้อน"
         price2 = 25
   else:
       print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
@@ -136,37 +110,26 @@ def processed_fruit_funtion():
       print("{:2}.{}{}{}".format(i+1,processed_fruit[i],"            \t\t\t ",price_processed_fruit[i])+" \t"+bath)
   processed_fruit_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
   if processed_fruit_1 == '1' :
-          fruit3 = "แยมสับปะรด"
           price3 = 85
   elif processed_fruit_1 == '2' :
-          fruit3 = "แยมสตอเบอร์รี่"
           price3 = 85
   elif processed_fruit_1 == '3' :
-          fruit3 = "เงาะลอยแก้ว"
           price3 = 40
   elif processed_fruit_1 == '4' :
-          fruit3 = "มะม่วงกวน"
           price3 = 50
   elif processed_fruit_1 == '5' :
-          fruit3 = "ทุเรียนกวน"
           price3 = 65
   elif processed_fruit_1 == '6' :
-          fruit3 = "ทุเรียนทอด"
           price3 = 70
   elif processed_fruit_1 == '7' :
-          fruit3 = "ทุเรียนเชื่อม"
           price3 = 60
   elif processed_fruit_1 == '8' :
-          fruit3 = "วุ้นมะพร้าว"
           price3 = 40
   elif processed_fruit_1 == '9' :
-          fruit3 = "กล้วยเชื่อม"
           price3 = 35
   elif processed_fruit_1 == '10' :
-          fruit1 = "ลำไยอบแห้ง"
           price3 = 50
   elif processed_fruit_1 == '11' :
-          fruit1 = "กี่วี่อบแห้ง"
           price3 = 70
   else:
       print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
@@ -184,16 +147,12 @@ def fruit_basket_funtion():
       print("{:2}.{}{}{}".format(i+1,fruit_basket[i],"            \t\t\t ",price_fruit_basket[i])+" \t"+bath)
   fruit_basket_1 = input("\nกรอกหมายเลขสินค้าที่ต้องการ  :  ")
   if fruit_basket_1 == '1' :
-          fruit4 = "S"
           price4 = 400
   elif fruit_basket_1 == '2' :
-          fruit4 = "M"
           price4 = 750
   elif fruit_basket_1 == '3' :
-          fruit4 = "L"
           price4 = 900
   elif fruit_basket_1 == '4' :
-          fruit4 = "XL"
           price4 = 1250
   else:
       print("\n------------------ไม่มีคำสั่งนี้ กรุณากรอกใหม่-----------------")
@@ -217,6 +176,7 @@ def nextbuy():
       elif buy_next == "2":
           all_price()
           money_rish()
+          print("---------------------------------------------------")
           break
       else:
           print("\nไม่มีคำสั่งนี้ กรุณากรอกใหม่")
